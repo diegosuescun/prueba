@@ -9,6 +9,7 @@ import { DiegoComponent } from './components/diego/diego.component';
 //Servicio
 import { UsuarioService } from './services/usuario.service';
 import { HomeComponent } from './components/home/home.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 const routes: Routes = [
   { path: '', component: UsuarioComponent },
@@ -24,7 +25,8 @@ const routes: Routes = [
     AppComponent,
     UsuarioComponent,
     DiegoComponent,
-    HomeComponent
+    HomeComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

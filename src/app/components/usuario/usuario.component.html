@@ -5,7 +5,7 @@
 <div class="row">
   <div class="col">
     <div class="alert alert-primary" *ngFor="let usuario of listasUsuarios; index as i">
-      {{ usuario.nombre | uppercase }}
+      {{ usuario.nombre }}
       <div class="float-right">
           <i class="fa fa-trash" aria-hidden="true" (click)="eliminarUsuario(i)"></i>
       </div>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div a.blue{
+            font-size: 14px;
+        }
+
+        a.blue.font-blue{
+            font-size: 10px;
+        }
+        
+        a.blue{
+            font-size:11px;
+        }
+
+        a{
+            font-size: 8px;
+        }
+    </style>
+    <script>
+        var objetoA =  {"hola":"mundo"};
+        var objetoB = objetoA;
+        console.log(objetoB.hola);
+
+
+        var numero = 1;
+        while(numero < 20){
+            console.log("hola"+numero);
+            numero++;
+        }
+        for(numero = 0; numero < 10; numero++){
+            console.log(numero);
+        }
+
+        let hora = 20;
+        switch(hora){
+            case 10:
+                console.log('holas');
+                break;
+            case 15:    
+                console.log('chaos');
+                break;
+            default:
+                console.log('Pailas');
+                break;
+        }   
+        function suma(num1,num2){
+            console.log(num1+num2);
+        }
+        suma(20,20);
+
+        let user = "Diego";
+
+        const nombre = function(name){
+            return 'Bienvenido ' + name;
+        }
+
+        nombre(user);
+    </script>
+</head>
+<body>
+    <div><a href="#" class="blue font-blue" onclick="mifuncion()">MI texto</a></div>
+
+    <div>
+        <h1>Hola Mundo</h1>
+    </div>
+    
+</body>
+</html>

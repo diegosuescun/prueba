@@ -1,0 +1,27 @@
+<div class="text-center my-3 py-3">
+    <h1>Administración de usuarios</h1>
+</div>
+<hr>
+<div class="row">
+  <div class="col">
+    <div class="alert alert-primary" *ngFor="let usuario of listasUsuarios; index as i">
+      {{ usuario.nombre | uppercase }}
+      <div class="float-right">
+          <i class="fa fa-trash" aria-hidden="true" (click)="eliminarUsuario(i)"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <h2>Crear usuario</h2>  
+    <form class="form" (submit)="addUsuario(nueUsuer)">
+      <input type="text"  class="form-control" #nueUsuer>
+      <hr>
+      <button class="btn btn-warning" type="submit">Agregar</button>
+    </form>
+  </div>   
+</div>
+
+
+
+

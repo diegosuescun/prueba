@@ -8,6 +8,7 @@ import { DiegoComponent } from './components/diego/diego.component';
 
 //Servicio
 import { UsuarioService } from './services/usuario.service';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '', component: UsuarioComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     UsuarioComponent,
-    DiegoComponent
+    DiegoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
